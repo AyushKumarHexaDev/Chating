@@ -1,7 +1,7 @@
-const express = require("express");
-const http = require("http");
-const cors = require("cors");
-const { Server } = require("socket.io");
+import express from "express";
+import http from "http";
+import cors from "cors";
+import { Server } from "socket.io";
 
 const app = express();
 const allowedOrigins = (process.env.CORS_ORIGIN || "http://localhost:5173,http://127.0.0.1:5173").split(",").map((origin) => origin.trim()).filter(Boolean);
